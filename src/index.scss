@@ -60,7 +60,7 @@ body {
 main {
   min-height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.75));
-  padding: 25px;
+  padding-top: 25px;
 }
 
 .search-box {
@@ -100,6 +100,18 @@ main {
   border-top: 1px solid #eaedf0;
   position: fixed;
   bottom: 0;
+}
+
+.bottom-left {
+  float: left;
+  width: 50%;
+
+}
+
+.bottom-right {
+  float: right;
+  width: 50%;
+  text-align: right;
 }
 
 .location-box .location {

@@ -87,8 +87,9 @@ function App() {
             onKeyPress={search}
           />
         </div>
-        <div>
-          <p className="bottom-text">*Search by City name or ZIP Code</p>
+        <div className="bottom-text">
+          <p className="bottom-left">*Search by City name or ZIP Code</p>
+          <p className="bottom-right">Weather by ThatMediocreCoder</p>
         </div>
         {(typeof weather.main != "undefined") ? (
           <div>
