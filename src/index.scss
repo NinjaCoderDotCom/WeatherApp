@@ -9,9 +9,6 @@ body {
 }
 
 .app {
-  // background-image: url("./assets/images/sunny.jpg");
-  // background-size: cover;
-  // background-position: center;
   background-color: azure;
   transition: 0.4 ease;
 }
@@ -36,6 +33,7 @@ body {
   background-position: center;
   transition: 0.4 ease;
 }
+
 .rain {
   background-image: url("./assets/images/rain.jpg");
   background-size: cover;
@@ -105,7 +103,6 @@ main {
 .bottom-left {
   float: left;
   width: 50%;
-
 }
 
 .bottom-right {
@@ -116,7 +113,7 @@ main {
 
 .location-box .location {
   color: #fff;
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 600;
   text-align: center;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
@@ -142,7 +139,7 @@ main {
   margin: 30px auto;
   background-color: rgba(255, 255, 255, 0.521);
   border-radius: 16px;
-  padding: 60px 80px;
+  padding: 60px 60px;
   color: #fff;
   font-size: 105px;
   font-weight: 900;
@@ -162,4 +159,81 @@ main {
   color: #fff;
   font-size: 19px;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+// ----------------Media Queries--------------------
+
+// For S screen
+@media screen and (max-width: 320px) {
+  .location-box .location {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .location-box .date {
+    font-size: 25px;
+    font-weight: 300;
+  }
+
+  .weather-box .temp {
+    font-size: 60px;
+    font-weight: 500;
+    text-shadow: 2px 5px rgba(50, 50, 70, 0.5);
+  }
+
+  .weather-box .minMax {
+    font-size: 25px;
+    font-weight: 500;
+    text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+  }
+}
+
+// For M screen
+@media screen and (max-width: 375px) {
+  .location-box .location {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .location-box .date {
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  .weather-box .temp {
+    font-size: 70px;
+    font-weight: 500;
+    text-shadow: 2px 5px rgba(50, 50, 70, 0.5);
+  }
+
+  .weather-box .minMax {
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+  }
+}
+
+// For L screen
+@media screen and (max-width: 425px) {
+  .location-box .location {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .location-box .date {
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  .weather-box .temp {
+    font-size: 80px;
+    font-weight: 500;
+    text-shadow: 2px 5px rgba(50, 50, 70, 0.5);
+  }
+
+  .weather-box .minMax {
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 2px 4px rgba(50, 50, 70, 0.5);
+  }
 }

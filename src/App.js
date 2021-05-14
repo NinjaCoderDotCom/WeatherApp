@@ -29,6 +29,7 @@ function App() {
         .then(res => res.json())
         .then(result => {
           setWeather(result);
+          console.log(result);
           setCondition(result.weather[0].main)
           setCity('');
         });
@@ -37,10 +38,10 @@ function App() {
   }
 
   // const time = () => {
-  //   let time = new Date().toLocaleTimeString(weather.sys.country);
+  //   let time = new Date().toLocaleTimeString('en-US',{timeZone:weather.timezone});
   //   console.log(time)
   //   console.log(weather.sys.country)
-  //   return time;
+  //   // return time;
   //   // console.log(time)
   // }
 
