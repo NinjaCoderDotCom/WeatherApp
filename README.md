@@ -1,4 +1,4 @@
-# You can see the running website of this project [HERE](https://thatmediocrecoder.github.io/WeatherApp/).
+# You can see the running website of this project [HERE](https://vivdhiman.github.io/WeatherApp/).
 
 ## Available Scripts
 
