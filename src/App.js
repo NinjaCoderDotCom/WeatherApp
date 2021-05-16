@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import { useEffect } from 'react';
+import bgvideo from './assets/video/bg.mp4';
 
 const api = {
   key: '97f2310ad387ae2eef69b41f1da620f8',
@@ -21,7 +21,6 @@ function App() {
   //     clearInterval(timer);
   //   }
   // }
-
 
   const search = evt => {
     if (evt.key === "Enter") {
@@ -71,27 +70,28 @@ function App() {
       case 'Sunny':
         return 'sunny';
       default:
-        return 'app';
+        return 'bg';
     }
   }
 
   return (
     <div className={getClass()}>
       <main>
+        <video autoPlay loop muted className="bg">
+          <source src={bgvideo} type="video/mp4" />
+        </video>
+
         <div className='search-box'>
           <input
             type='text'
             className='search-bar'
-            placeholder='Search'
+            placeholder='Search by city name/ZIP code'
             onChange={e => setCity(e.target.value)}
             value={city}
             onKeyPress={search}
           />
         </div>
-        <div className="bottom-text">
-          <p className="bottom-left">*Search by City name or ZIP Code</p>
-          <p className="bottom-right">Weather by ThatMediocreCoder</p>
-        </div>
+
         {(typeof weather.main != "undefined") ? (
           <div>
             <div className="location-box">
