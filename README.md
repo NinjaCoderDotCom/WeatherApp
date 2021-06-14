@@ -1,7 +1,5 @@
 # You can see the running website of this project [HERE](https://vivdhiman.github.io/WeatherApp/).
 
-## Available Scripts
-
 ### To run this project, Follow these steps:
 1.) Download it.\
 2.) Install npm in the directory via npm install.\
