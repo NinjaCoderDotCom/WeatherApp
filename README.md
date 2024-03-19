@@ -1,4 +1,4 @@
-# You can see the running website of this project [HERE](https://vivdhiman.github.io/WeatherApp/).
+# You can see the running website of this project [HERE](https://ninjacoderdotcom.github.io/WeatherApp/).
 
 ### To run this project, Follow these steps:
 1.) Download it.\
